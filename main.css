@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font: 1px 'Open-Sans', serif;
+}
+.product {
+    margin: 0 auto;
+    border: 1px solid;
+    width: 1024px;
+    height: 1000px;
+    /*mbd*/
+}
+.product__header {
+    font-size: 40rem;
+    
+}
