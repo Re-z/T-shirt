@@ -1,0 +1,22 @@
+.dropdown-btn, .socials, .socials-hover{
+	background: url(sprites.png) no-repeat;
+}
+
+.dropdown-btn{
+	background-position: 0 -141px ;
+	width: 11px;
+	height: 6px;
+}
+
+.socials{
+	background-position: 0 -70px ;
+	width: 174px;
+	height: 33px;
+}
+
+.socials-hover{
+	background-position: 0 0;
+	width: 174px;
+	height: 33px;
+}
+

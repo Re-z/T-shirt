@@ -14,8 +14,50 @@
             <img src="img/photo1.jpg" alt="T-shirt"/>
         </div>
 
-        <aside class="product__order">
-            <form class="product__order-form" action="">
+        <aside class="order">
+            <form class="order__form" action="">
+                <div class="order__color-wrap">
+                    <p class="order__color-title">Color</p>
+                    <div class="order__radio-wrap">
+                        <input id="color1" class="order__color" type="radio" name="color" checked/>
+                        <label class="color__label" id="color1__label" for="color1"></label>
+
+                        <input id="color2" class="order__color" type="radio" name="color"/>
+                        <label class="color__label" id="color2__label" for="color2"></label>
+
+                        <input id="color3" class="order__color" type="radio" name="color"/>
+                        <label class="color__label" id="color3__label" for="color3"></label>
+
+                        <input id="color4" class="order__color" type="radio" name="color"/>
+                        <label class="color__label" id="color4__label" for="color4"></label>
+                    </div>
+                </div>
+                <div class="order__size-wrap">
+                    <p class="order__size-title">Size</p>
+                    <select id="order__size-select" class="order__select" name="size" >
+                        <option class="order__select" value="S">SELECT ONE</option>
+                        <option class="order__select" value="S">S</option>
+                        <option class="order__select" value="S">M</option>
+                        <option class="order__select" value="S">L</option>
+                        <option class="order__select" value="S">XL</option>
+                    </select>
+                </div>
+                <div class="order__quant-wrap">
+                    <p class="order__quant-title">Quantity</p>
+                    <select id="order__quant-select" class="order__select" name="size" >
+                        <option class="order__select" value="S">1</option>
+                        <option class="order__select" value="S">2</option>
+                        <option class="order__select" value="S">3</option>
+                    </select>
+                </div>
+                <div class="order__availability">
+                    <p class="order__availability-title">availability: <span class="order__availability-status">in stock</span> </p>
+                </div>
+                <div class="order__price-wrap">
+                    <p class="order__price-last">$37.59</p>
+                    <p class="order__price-current">$30.00</p>
+                </div>
+                <input class="order__add-btn" type="submit" value="add to cart"/>
                 <!--FILL THE ASIDE SECTION-->
             </form>
         </aside>
