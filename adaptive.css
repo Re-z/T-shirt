@@ -1,0 +1,30 @@
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: .9px;
+    }
+    .product__img-container {
+        width: 460px;
+        height: 300px;
+    }
+    .product__main-img {
+        height: 336px;
+    }
+    .order {
+        padding-left: 25px;
+        width: 260px;
+    }
+    .order__color-title,
+    .order__size-title,
+    .order__quant-title {
+        width: 100%;
+        font-size: 17rem;
+        margin-bottom: 10px;
+        margin-top: -5px;
+    }
+    .order__size-wrap {
+        margin-top: 22px;
+    }
+    .order__select {
+        font-size: 17rem;
+    }
+}
