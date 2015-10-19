@@ -188,14 +188,18 @@ html {
 }
 /*finish order form */
 /*start socials*/
-.socials {
+.socials__title {
     text-transform: uppercase;
+    font-size: 14rem;
+    font-weight: 700;
+    display: inline;
+}
+.socials {
     display: flex;
     align-items: center;
     margin-top: 25px;
     list-style: none;
-    font-size: 14rem;
-    font-weight: 700;
+
 }
 .socials__item {
     font-size: 20px;
@@ -261,15 +265,49 @@ html {
     letter-spacing: 1.2rem;
     line-height: 19rem;
 }
+.product__description-qual-wrap {
+    ///
+}
 .product__description-qual {
     font-size: 15rem;
     font-weight: 600;
-    margin-top: 21px;
     line-height: 16rem;
     list-style-position: inside;
     letter-spacing: 1.2rem;
     list-style: none;
 }
+.product__description-qual-text {
+    font-size: 12rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .9px;
+    visibility: hidden;
+    cursor: pointer;
+    position: relative;
+    width: 100px;
+}
+.product__description-qual-text:before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-top: 2px solid black;
+    width: 96px;
+    top: -12px;
+    cursor: default;
+}
+.product__description-qual-text:after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url('img/sprites.png');
+    background-position: 0 -141px ;
+    width: 11px;
+    height: 6px;
+    right: 3px;
+    top: 5px;
+
+}
+
 .product__description-qual-item:before {
     content: ".";
     font-size: 25rem;
@@ -312,7 +350,7 @@ html {
     text-align: center;
     width: 150px;
     position: absolute;
-    top: 24%;
+    top: 25%;
     left: 25%;
     visibility: hidden;
 }
@@ -325,13 +363,14 @@ html {
     font-size: 12rem;
     font-weight: 600;
     position: absolute;
-    top: 63%;
+    top: 65%;
     color: black;
-    left: 27%;
+    left: 26%;
     visibility: hidden;
 
 }
 .product__gallery-img {
     position: relative;
     z-index: -1;
+    max-width: 100%;
 }
