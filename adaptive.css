@@ -108,7 +108,7 @@
 
     .product {
         width: 284px;
-        outline: 1px solid;
+        overflow: hidden;
     }
     .product__header {
         letter-spacing: .1px;
@@ -194,7 +194,6 @@
         margin-left: 0;
     }
     .product__gallery {
-        outline: 1px solid;
         margin-top: 22px;
         padding-left: 0;
     }
