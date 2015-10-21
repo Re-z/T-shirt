@@ -114,7 +114,16 @@
         $(function(){
             $('.product__description-qual-text').click(function(){
                 $('.product__description-qual').slideToggle();
-            })
+            });
+            function socialsAdaptive() {
+                var wWidth = $(window).width(),
+                    socialsClone = $('.socials').clone();
+                if (wWidth>320 && wWidth<767) {
+                    $('.socials').hide();
+                    $(socialsClone).insertAfter('.product__description').addClass('socials_mobile').find('.socials__title').hide();
+                }
+            }
+            socialsAdaptive();
         })
     </script>
 </body>
