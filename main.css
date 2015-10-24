@@ -329,7 +329,28 @@ html {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: relative;
     margin-bottom: 100px;
+}
+.product__gallery-btn {
+    width: 17px;
+    height: 27px;
+    position: absolute;
+    top: 50%;
+    margin-top: -13px;
+    display: none;
+}
+.product__gallery-btn:hover {
+    cursor: pointer;
+}
+.product__gallery-btn_left {
+    background: url("img/arrow-left.png");
+    left: 5px;
+
+}
+.product__gallery-btn_right {
+    background: url("img/arrow-right.png");
+    right: 5px;
 }
 .product__gallery-box {
     position: relative;
@@ -367,7 +388,6 @@ html {
     color: black;
     left: 26%;
     visibility: hidden;
-
 }
 .product__gallery-img {
     position: relative;

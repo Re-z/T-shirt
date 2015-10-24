@@ -197,11 +197,15 @@
         margin-top: 22px;
         padding-left: 0;
     }
+    .product__gallery-btn {
+        display: block;
+    }
     .product__gallery-img {
         max-width: none;
+        width: 284px;
     }
     .product__gallery-box {
-        width: 284px;/* width of the main container */
+        z-index: -1; /*for slider btn cursor pointer */
     }
     .product__gallery-box:hover {
         background: none;

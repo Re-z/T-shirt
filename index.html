@@ -89,6 +89,8 @@
         </div>
 
         <div class="product__gallery">
+            <div class="product__gallery-btn product__gallery-btn_left "></div>
+            <div class="product__gallery-btn product__gallery-btn_right"></div>
 
             <div class="product__gallery-box">
                 <h6 class="product__gallery-name">our iconic blazer</h6>
@@ -123,6 +125,35 @@
                     $(socialsClone).insertAfter('.product__description').addClass('socials_mobile').find('.socials__title').hide();
                 }
             }
+
+            var slideCounter = 1;
+
+            $('.product__gallery-btn_left').click(function(){
+                slideCounter--;
+                if(slideCounter==0) {
+                    slideCounter=1;
+                    return;
+                }
+                else {
+                    $('.product__gallery-box:first').animate({
+                        'margin-left':'+=284px'
+                    },'slow');
+                }
+
+            });
+
+            $('.product__gallery-btn_right').click(function(){
+                slideCounter++;
+                if(slideCounter==4) {
+                    slideCounter=3;
+                    return;
+                }
+                $('.product__gallery-box:first').animate({
+                    'margin-left':'-=284px'
+                },'slow');
+            });
+
+
             socialsAdaptive();
         })
     </script>
