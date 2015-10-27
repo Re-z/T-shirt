@@ -185,8 +185,10 @@
     .socials_mobile {
         width: 100%;
         margin-top: 23px;
+        -webkit-align-items: flex-end;
         align-items: flex-end;
         height: 50px;
+        -webkit-justify-content: center;
         justify-content: center;
         border-top: 1px solid lightgrey;
     }
@@ -196,16 +198,18 @@
     .product__gallery {
         margin-top: 22px;
         padding-left: 0;
+        padding-right: 0;
     }
     .product__gallery-btn {
         display: block;
     }
     .product__gallery-img {
-        max-width: none;
+        max-width: 284px;
         width: 284px;
     }
     .product__gallery-box {
         z-index: -1; /*for slider btn cursor pointer */
+        width: 284px;
     }
     .product__gallery-box:hover {
         background: none;

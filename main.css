@@ -13,8 +13,11 @@ html {
     margin: 0 auto;
     width: 1024px;
     padding-top: 32px;
+    -webkit-display: flex;
     display: flex;
+    -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-align-content: flex-start;
     align-content: flex-start;
 }
 .product__header {
@@ -24,8 +27,11 @@ html {
     width: 100%;
 }
 .product__img-container {
+    -webkit-display: flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-justify-content: center;
     justify-content: center;
     width: 652px;
     height: 420px;
@@ -48,7 +54,9 @@ html {
     border-bottom: 1px solid lightgray;
 }
 .order__color-wrap {
+    -webkit-display: flex;
     display: flex;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -61,7 +69,9 @@ html {
 }
 /* start radio buttons */
 .order__radio-wrap {
+    -webkit-display: flex;
     display: flex;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
     width: 218px;
 }
@@ -101,8 +111,11 @@ html {
 }
 /*finished radio buttons */
 .order__size-wrap {
+    -webkit-display: flex;
     display: flex;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
     margin-top: 32px;
     position: relative;
@@ -135,7 +148,9 @@ html {
     outline: none;
 }
 .order__quant-wrap {
+    -webkit-display: flex;
     display: flex;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 32px;
@@ -145,7 +160,9 @@ html {
     border-top: 1px solid lightgrey;
     margin-top: 31px;
     height: 46px;
+    -webkit-display: flex;
     display: flex;
+    -webkit-align-items: flex-end;
     align-items: flex-end;
 }
 .order__availability-title {
@@ -157,8 +174,10 @@ html {
     color: #F05469;
  }
 .order__price-wrap{
+    -webkit-display: flex;
     display: flex;
     margin-top: 6px;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
     padding-right: 11px;
 }
@@ -195,7 +214,9 @@ html {
     display: inline;
 }
 .socials {
+    -webkit-display: flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
     margin-top: 25px;
     list-style: none;
@@ -327,7 +348,9 @@ html {
     padding-left: 3px;
     margin-top: 60px;
     width: 100%;
+    -webkit-display: flex;
     display: flex;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
     position: relative;
     margin-bottom: 100px;
