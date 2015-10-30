@@ -67,6 +67,12 @@ html {
     font-weight: bold;
     align-self: center;
 }
+.order__size-title {
+    margin-right: 53px;
+}
+.order__quant-title {
+    margin-right: 16px;
+}
 /* start radio buttons */
 .order__radio-wrap {
     -webkit-display: flex;
@@ -115,13 +121,17 @@ html {
     display: flex;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
     margin-top: 32px;
     position: relative;
 }
-.order__select {
+#order__size-select,
+#order__quant-select {
     width: 218px;
+}
+
+.order__select {
     height: 40px;
     padding: 0 10px;
     font: 15rem 'Open Sans',serif;
@@ -152,7 +162,9 @@ html {
     display: flex;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    justify-content: space-between;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+
     margin-top: 32px;
     position: relative;
 }

@@ -136,13 +136,21 @@
     .order__size-wrap {
         margin-top: 21px;
     }
-    .order__select {
+    #order__size-select, #order__quant-select {
         width: 195px;
+    }
+    .order__size-title {
+    margin-right: 56px;
+    }
+    .order__select {
         height: 43px;
     }
     .order__quant-wrap {
         margin-top: 25px;
     }
+    .order__quant-title {
+    margin-right: 20px;
+    }   
     .order__availability {
         margin-top: 25px;
         height: 40px;
